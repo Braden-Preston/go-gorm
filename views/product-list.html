@@ -1,0 +1,19 @@
+<h1>All the products!</h1>
+<table>
+    <tr>
+        <th>Created</th>
+        <th>Code</th>
+        <th>Price</th>
+    </tr>
+    {% for P in Products %}
+        <tr>
+            <td>{{ P.Code }}</td>
+            <td>{{ P.Price }}</td>
+            <td>
+                <a href="/products/1">{{ P.CreatedAt }}</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+<hr>
+<a href="/">Back</a>
